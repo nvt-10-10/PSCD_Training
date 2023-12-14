@@ -69,6 +69,7 @@ section {
   transition: 0.25s;
 }
 .navbar__link:hover {
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.55);
 }
 .navbar__active {
@@ -156,8 +157,9 @@ section {
 .slide__item__desc {
   margin-bottom: 20px;
   font-family: var(--font);
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 28px;
+  color: rgb(255, 255, 255);
 }
 .slide__item__act {
   padding: 8px 16px;
@@ -168,6 +170,7 @@ section {
   transition: 0.35s;
 }
 .slide__item__act:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 .slide-icon {
@@ -216,7 +219,7 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1320px;
 }
 
 .section-2 {
@@ -227,8 +230,10 @@ section {
   gap: 24px;
   padding-bottom: 95px;
   border-bottom: 1px solid #ccc;
+  margin: 0 -12px;
 }
 .section-2__item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,20 +254,26 @@ section {
   line-height: 38.4px;
 }
 .section-2__item--desc {
-  margin-bottom: 24px;
+  margin: 0 12px 16px;
   font-family: var(--font);
   font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  color: rgb(90, 90, 90);
 }
 .section-2__item--btn {
+  height: 37.6px;
   padding: 6px 12px;
+  margin-bottom: 16px;
+  background-color: #51585e;
+  border-radius: 6px;
   font-size: 1.6rem;
   line-height: 24px;
   color: #fff;
-  background-color: #51585e;
-  border-radius: 6px;
   transition: 0.25s;
 }
 .section-2__item--btn:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -277,12 +288,12 @@ section {
   border-bottom: 1px solid #ccc;
 }
 .section__media {
-  max-width: 500px;
+  max-width: 550px;
   aspect-ratio: 1/1;
 }
 .section__img {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
 }
 .section__content {
@@ -291,6 +302,11 @@ section {
 }
 .section__heading {
   font-size: 5rem;
+  color: #5a5a5a;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.section__heading > span {
+  color: #6c757d;
 }
 .section__desc {
   margin-top: 8px;
@@ -313,6 +329,7 @@ section {
   color: blue;
 }
 .footer__link:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
